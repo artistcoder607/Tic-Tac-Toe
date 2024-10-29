@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <nav class="navbar">
+        <ul class="nav-item">
+            <li>Tic Tac Toe</li>
+        </ul>
+    </nav>
+
+<div class="game-container">
+    <div class="container">
+        <div class="game bt-0 bl-0"> <span class="box-text" onclick="change()"></span></div>
+        <div class="game bt-0"> <span class="box-text" onclick="change()"></span></div>
+        <div class="game bt-0 br-0"> <span class="box-text" onclick="change()"></span></div>
+        <div class="game bl-0"> <span class="box-text" onclick="change()"></span></div>
+        <div class="game"> <span class="box-text" onclick="change()"></span></div>
+        <div class="game br-0"> <span class="box-text" onclick="change()"></span></div>
+        <div class="game bl-0 bb-0"> <span class="box-text" onclick="change()"></span></div>
+        <div class="game bb-0"> <span class="box-text" onclick="change()"></span></div>
+        <div class="game bb-0 br-0"> <span class="box-text" onclick="change()"></span></div>
+    </div>
+
+    <div class="second-container board" id="board">
+        <span class="turn">Turn for x</span>
+        <button class="reset" onclick="resetGame()">Reset</button>
+        <div id="message"></div>
+    </div>
+
+</div>
+
+    <script src="app.js"></script>
+</body>
+</html>

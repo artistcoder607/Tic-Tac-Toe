@@ -1,0 +1,130 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+ }
+
+body {
+    background-color: #ebd8f6;
+}
+
+.navbar {
+    background-color: #5d5757;
+    height: 45px;
+    width: 100vw;
+    font-size: 25px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item li {
+    list-style: none;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+gap: 100px;
+    margin-top: 50px;
+    /* background-color: red; */
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw) ;
+    justify-content: center;
+}
+
+.game {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #8c8484;
+    font-size: 3.7vw ;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 200;
+    cursor: pointer;
+}
+
+.game:hover {
+    background-color: whitesmoke;
+}
+
+.reset {
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    letter-spacing: 0.4px;
+    background-color: #495fd8;
+    color: white;
+    padding: 7px;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+    border: 2px solid #495fd8;
+    box-shadow: 1px 1px 10px 1px #8c8484;
+}
+
+.reset:hover {
+    opacity: 0.9;
+    border: 2px solid #495fd8;
+}
+
+.second-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.turn {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    background-color: #5d5757;
+    color: white;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    box-shadow: 1px 1px 10px 1px #8c8484;
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.bt-0 {
+    border-top: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+
+@media only screen and (max-width: 600px) and (min-width: 200px) {
+
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+display: grid;
+grid-template-columns: auto;
+
+}
+
+}
